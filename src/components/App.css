@@ -1,0 +1,30 @@
+.item-list-container {
+text-align: center;
+padding: 2rem;
+margin: 2rem auto;
+  background-color: #f9f9f9; /* fondo gris claro */
+border-radius: 12px;
+max-width: 800px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-list-container h2 {
+color: #333;
+font-size: 1.8rem;
+}
+
+.item-list-container .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .item-list-container {
+    padding: 1rem;
+    max-width: 95%;
+  }
+  .item-list-container h2 {
+    font-size: 1.4rem;
+  }
+}

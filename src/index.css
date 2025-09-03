@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente global */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf2f8; /* rosa muy claro (puedes cambiarlo) */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Links por defecto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar general */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #db2777; /* rosa fuerte */
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #facc15; /* amarillo */
+  color: black;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  justify-items: center;
+  background-color: #fff;
+}
+
+.category-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.category-card img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-weight: bold;
+  color: #374151;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.cart-panel {
+  width: 40%;
+  background: #fff;
+  padding: 1rem;
+  border-right: 2px solid #eee;
+}
+
+.buyer-form {
+  width: 40%;
+  background: #f9fafb;
+  padding: 1rem;
+  border-left: 2px solid #eee;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 60px;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #db2777;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #be185d;
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column;
+  }
+  .cart-panel,
+  .buyer-form {
+    width: 100%;
+    border: none;
+  }
+}
+
