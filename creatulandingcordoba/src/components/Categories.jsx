@@ -1,9 +1,9 @@
 const Categories = ({ addToCart }) => {
 const categorias = [
-    { nombre: "Huawei", img: "huawei.avif", price: 250000 },
+    { nombre: "Huawei", img: "Huawei.avif", price: 250000 },
     { nombre: "Samsung", img: "samsung.jpg", price: 300000 },
     { nombre: "Motorola", img: "motorola.jpg", price: 190000 },
-    { nombre: "Xiaomi", img: "xiaomi.jpg", price: 200000 },
+    { nombre: "Xiaomi", img: "XIAOMI.jpg", price: 200000 },
 ];
 
 const handleAdd = (cat) => {
